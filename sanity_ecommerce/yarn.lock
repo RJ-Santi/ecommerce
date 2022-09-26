@@ -6150,11 +6150,6 @@ js-yaml@^4.1.0:
   dependencies:
     argparse "^2.0.1"
 
-jsbarcode@^3.8.0:
-  version "3.11.5"
-  resolved "https://registry.npmjs.org/jsbarcode/-/jsbarcode-3.11.5.tgz#390b3efd0271f35b9d68c7b8af6e972445969014"
-  integrity sha512-zv3KsH51zD00I/LrFzFSM6dst7rDn0vIMzaiZFL7qusTjPZiPtxg3zxetp0RR7obmjTw4f6NyGgbdkBCgZUIrA==
-
 jsbn@~0.1.0:
   version "0.1.1"
   resolved "https://registry.npmjs.org/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
@@ -8570,14 +8565,6 @@ raw-body@2.5.1:
     http-errors "2.0.0"
     iconv-lite "0.4.24"
     unpipe "1.0.0"
-
-react-barcode@^1.3.2:
-  version "1.4.5"
-  resolved "https://registry.npmjs.org/react-barcode/-/react-barcode-1.4.5.tgz#01d5a7f3c504da1dee10cd1cf5ea252a1dc1f327"
-  integrity sha512-NHMqX//Z28T7vz5cOAD4nRBKn7H6opu6p5XtaiuvYhgivMyR5rOEqPCPd4INPIVxERHDkRiEt5CtOI6d9EgAxQ==
-  dependencies:
-    jsbarcode "^3.8.0"
-    prop-types "^15.6.2"
 
 react-base16-styling@^0.6.0:
   version "0.6.0"
