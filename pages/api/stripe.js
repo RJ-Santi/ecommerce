@@ -1,7 +1,14 @@
+import Stripe from 'stripe';
+
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+
+
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
+    // ERROR RETURNING UNDEFINED - DEBUG
+    console.log(req.body.cartItems);
+
     try {
         const params = {
             submit_type: 'pay',
@@ -19,6 +26,12 @@ export default async function handler(req, res) {
                 quantity: 1,
             },
             ],
+            line_items: req.body.cartItems.map((item) => {
+              const img = item.image[0].asset._ref
+              const newImage = img.replace('image-', 'https://cdn.sanity.io/images/ysgdvo8d/production/').replace('-webp', '.webp')
+
+              console.log('IMAGE', newImage)
+            }),
             mode: 'payment',
             success_url: `${req.headers.origin}/?success=true`,
             cancel_url: `${req.headers.origin}/?canceled=true`,
