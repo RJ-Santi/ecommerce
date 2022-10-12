@@ -6,8 +6,16 @@ const Footer = () => {
     <div className='footer-container'>
       <p>2022 RJS Ecommerce All Rights Reserved</p>
       <p className='icons'>
-        <AiFillInstagram />
-        <AiOutlineTwitter />
+        <a
+          href='https://www.instagram.com/'
+          target={'_blank'}
+          rel={'noreferrer'}
+        >
+          <AiFillInstagram />
+        </a>
+        <a href='https://twitter.com/home' target={'_blank'} rel={'noreferrer'}>
+          <AiOutlineTwitter />
+        </a>
       </p>
     </div>
   )
